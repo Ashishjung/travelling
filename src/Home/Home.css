@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+.Home{
+    width: 100%;
+    height: 35rem;
+    }
+   .video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.video-overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    /* background-color: rgba(0, 0, 0, 0.411); */
+    background-color: rgba(0, 0, 255, 0.075);
+}
+.text-container{
+    width: 70%;
+    height:36rem;
+ display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+.text-container h2{
+    font-weight: bold;
+    font-size: 2.2rem;
+    width: 28rem;
+    font-family: 'Qahiri', sans-serif;
+   }
+.text-container p{
+    width: 28rem;
+    margin-top: 1rem;
+    font-weight: 400;
+    font-size: .9rem;
+    color: white;
+}
+.text-container .btn{
+    position:relative;
+    left: 0;
+    background-color: #f22f20;
+    color:white;
+}
+.icon-container{
+    width: 10%;
+    height: 15%;
+     position:fixed;
+    right: 0;
+    display: flex;
+ align-items: flex-end;
+ flex-direction: column;
+    z-index: 7;
+}
+.icon-container i{
+    background-color: white;
+    color:black;
+   border-radius: .9rem;
+   display: grid;
+   place-items: center;
+   width: 1.5rem;
+   height: 1.5rem;
+   font-size: 1.1rem;
+   margin: .2rem;
+   margin-right: .7rem;
+}
+.hom-con-2{
+    width: 100%;
+    height: 40rem;
+    /* background-color: black; */
+     margin-top: -1rem;
+    position: relative;
+   }
+   .under-water{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        }
+    .image-overlay{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top:0;
+        background-color: rgba(0, 0, 0, 0.021);
+    }
+    .image-overlay h1{
+        text-align: center;
+        margin-top: 2rem;
+        font-size: 4rem;
+        color: white;
+        font-weight: 700;
+    }
+    .deep-boxes{
+        width: 100%;
+        height: 12rem;
+        /* background-color: yellow; */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+         justify-content: center;
+        margin-top: 3rem;
+    }
+    .dep{
+        width: 20%;
+        height: 10rem;
+       margin: .9rem;
+     }
+    .dep .more-btn{
+        background-color: #f22f20;
+        color:white;
+        font-size: .5rem;
+        margin-top: 1.5rem;
+    }
+    .dep h3{
+        color:white;
+    }
+    .dep p{
+        font-size: .7rem;
+        color: rgba(228, 224, 224, 0.76);
+        margin-top: .5rem;
+        font-weight: 400;
+        line-height: 1.2rem;
+    }
+    .deep-box2{
+        width:100%;
+        height: 15rem;
+         display: flex;
+       }
+    .dep2-box1{
+        width:60%;
+        height: 100%;
+        /* background-color: brown; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+    .dep2-box1 h2{
+        width:20rem;
+        font-size: 2.5rem;
+        color: white;
+        font-weight: 400;
+    }
+    .dep2-box1 p{
+        width: 15rem;
+        line-height: 1.2rem;
+        font-weight: 400;
+        font-size: .7rem;
+        margin-top: 1rem;
+        color: rgba(228, 224, 224, 0.76);
+    }
+    .dep2-box2{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .depimg-box{
+        width: 50%;
+        height: 12rem;
+        background-image: url(../Assest/sisan2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: .1rem;
+       box-shadow: #f22f20 -5px 5px,  #f22f20 -20px 20px;
+    }
+@media(max-width:900px){
+   html{
+       font-size: 1.9rem;
+   }
+   .Home{
+    width: 100%;
+    height: 35rem;
+   }
+  .text-container{
+        width: 90%;
+        overflow-x: hidden;
+        height:35rem;
+     display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: white;
+    }
+    .text-container h2{
+        font-weight: bold;
+        font-size: 1.8rem;
+        width: 20rem;
+        font-family: 'Qahiri', sans-serif;
+       }
+       .text-container p{
+        width: 20rem;
+        margin-top: 1rem;
+        font-weight: 400;
+        font-size: .9rem;
+    }
+    .hom-con-2{
+        width: 100%;
+        height: 65rem;
+         margin-top: -5rem;
+        position: relative;
+  }
+        .deep-boxes{
+            width: 100%;
+            height: 20rem;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+             justify-content: center;
+            margin-top: 3rem;
+            flex-wrap: wrap;
+        }
+    .dep{
+        width: 40%;
+        height: 5rem;
+    }
+    .dep h3{
+        font-size: 1rem;
+    }
+    .dep p{
+        font-size: .7rem;
+        line-height: 1rem;
+    }
+    .deep-box2{
+        width:100%;
+        height: 35rem;
+         display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        }
+ .dep2-box1 h2{
+        width: 20rem;
+        font-size: 2rem;
+    }
+    .depimg-box{
+        width: 100%;
+        height: 12rem;
+        }
+}
+@media(max-width:700px){
+    html{
+        font-size: 1.4rem;
+    }
+  .Home{
+        width: 100%;
+        height: 34.5rem;
+    }
+    .hom-con-2{
+        width: 100%;
+        height: 65rem;
+        margin-top: -8rem;
+        position: relative;
+       }
+        .deep-box2{
+            width:100%;
+            height: 35rem;
+             display: flex;
+            flex-direction: column;
+           justify-content: center;
+            align-items: center;
+            }
+            .dep2-box1 h2{
+                width: 20rem;
+                font-size: 2rem;
+                margin-left: 3rem;
+            }
+            .deep-boxes{
+                width: 100%;
+                height: 23rem;
+                }
+            .dep{
+                width: 100%;
+                height: 7rem;
+                margin: .1rem;
+                padding-left: 1.5rem;
+                
+            }
+            .text-container{
+                width: 90%;
+                height:35rem;
+             }
+   .text-container h2{
+        font-weight: bold;
+        font-size: 1.5rem;
+        width: 15rem;
+        font-family: 'Qahiri', sans-serif;
+       }
+       .text-container p{
+        width: 15rem;
+        margin-top: 1rem;
+        font-weight: 400;
+        font-size: .9rem;
+    }
+    .text-container .btn{
+      font-size: .5rem;
+    }
+    .icon-container{
+       display: flex;
+     align-items: flex-end;
+     flex-direction: column;
+     justify-content: center;
+       }
+       .icon-container i{
+        width: 1.3rem;
+       height: 1.3rem;
+       font-size: 1rem;
+     }
+}

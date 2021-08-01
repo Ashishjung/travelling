@@ -1,0 +1,77 @@
+.destination{
+    width: 100%;
+    height: 34.8rem;
+    }
+    .video-show{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        }
+        .video-side-B{
+            width:40%;
+            height: 100%;
+            background-color: #0e233e;
+        }
+.dest-video{
+    width: 60%;
+    height: 100%;
+    object-fit: cover;
+}
+.destV-overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    background-color: #0e233e62;
+    display: flex;
+}
+.overlay-box1{
+    width:30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.overlay-box1 h1{
+    font-weight: bolder;
+    color: white;
+    font-size: 3rem;
+}
+.overlay-box2{
+    width:70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.overlay-box2 h2{
+    font-size: 3rem;
+    color: white;
+    margin: 1rem;
+    cursor: pointer;
+    transition: all linear .5s;
+}
+.overlay-box2 h2:hover{
+    color: tomato;
+}
+@media (max-width:900px){
+    .video-side-B{
+     
+        display: none;
+       }
+       .dest-video{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .overlay-box1{
+      display: none;
+    }
+    .overlay-box2{
+        width:100%;
+        height: 100%;
+       
+    }
+}

@@ -1,0 +1,222 @@
+.about{
+    width: 100%;
+    height: auto;
+    background-color: rgb(240, 237, 237);
+    overflow-y: hidden;
+ }
+.about-intro{
+    width: 100%;
+    height:35rem;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 6;
+}
+.about-intro #aboutimg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.about-overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0e063c71;
+    }
+.about-overlay h1{
+    color: white;
+    font-size: 5rem;
+    font-weight: 400;
+}
+.team{
+    width: 100%;
+    height: 32rem;
+ background-color: rgb(240, 237, 237);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 6;
+}
+.team-img{
+    width:40%;
+    height: 18rem;
+    background-image: url(../Assest/team.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center -.5rem;
+    margin: 1rem;
+}
+.team-detail{
+    width:40%;
+    height: 20rem;
+ padding:2rem 0 0 1rem;
+    }
+    .team-detail h3,p{
+        margin-top: 1rem;
+        color: rgba(0, 0, 0, 0.377);
+    
+        font-size: .9rem;
+    }
+.team-detail h3{
+    font-weight: bolder;
+    font-size: 2rem;
+    color:rgba(0, 0, 0, 0.774);
+ 
+}
+.packages{
+    width: 100%;
+    height: 30rem;
+    background-color: rgb(240, 237, 237);
+}
+.about .packages h3,h6{
+    text-align: center;
+    margin-top: 1rem;
+    color:rgba(0, 0, 0, 0.74);
+    font-size: 1rem;
+}
+.packages >h6{
+    color: rgba(0, 0, 0, 0.377);
+    }
+.packages .package-detail{
+    width: 100%;
+    height: 25rem;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.package-box{
+    width: 30%;
+    height: 20rem;
+    background-color: rgba(243, 242, 242, 0.986);
+   margin: .1rem;
+}
+.p-box{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: .5rem;
+    padding-right: 1rem;
+}
+hr{
+    background-color: #f22f20;
+    border: .2px solid #f22f20;
+}
+.p-box .p-btn{
+font-size: .8rem;
+height: 2rem;
+background-color: rgba(255, 255, 255, 0.733);
+}
+.p-box h4{
+    color: rgba(0, 0, 0, 0.644);
+    font-weight: 400;
+    font-size: 1rem;
+}
+.other-facility{
+    width:100%;
+    height: 30rem;
+    margin-top: 4rem;
+}
+.about .other-facility h3,h6{
+    text-align: center;
+    color: rgba(0, 0, 0, 0.774);
+    }
+    .other-facility h6{
+        color: rgba(0, 0, 0, 0.486);
+    }
+    .about .facility-box{
+        width: 100%;
+        height: 25rem;
+         display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+      }
+    .f-boxes{
+        width: 30%;
+        height: 20rem;
+        margin: .4rem;
+      }
+    .f-boxes #bike{
+        width: 100%;
+        height: 10rem;
+        object-fit: cover;
+        transition: all linear .5s;
+    }
+    .f-boxes #bike:hover{
+        transform: scale(1.1);
+    }
+    .f-boxes h2{
+        cursor: pointer;
+        transition: all linear .5s;
+        font-size: 1.1rem;
+        color: rgba(0, 0, 0, 0.801);
+    }
+    .f-boxes h2:hover{
+        color: tomato;
+    }
+@media(max-width:900px){
+    .team{
+        width: 100%;
+        height: 47rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .team-img{
+        width:90%;
+        height: 18rem;
+       }
+    .team-detail{
+        width:90%;
+        height: 20rem;
+       }
+        .packages{
+            width: 100%;
+            height: 80rem;
+            
+          }
+        .packages .package-detail{
+            width: 100%;
+            height: 75rem;
+            flex-direction: column;
+            margin-top: 1rem;
+        }
+        .package-box{
+            width: 90%;
+            height: 22rem;
+          margin: .1rem;
+        }
+        .other-facility{
+            width:100%;
+            height: 85rem;
+           }
+        .about .facility-box{
+            width: 100%;
+            height: 75rem;
+         flex-direction: column;
+            }
+        .f-boxes{
+            width: 90%;
+            height: 20rem;
+            margin: 1rem;
+          }
+}
+@media(max-width:550px){
+    .about-overlay h1{
+        color: white;
+        font-size: 3.5rem;
+        font-weight: 400;
+    }
+    .packages >h6{
+        font-size: .8rem;
+    }
+}

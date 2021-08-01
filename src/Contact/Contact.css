@@ -1,0 +1,117 @@
+.Contact {
+    width: 100%;
+    height: 28rem;
+    position: relative;
+    overflow-y: hidden;
+    z-index: 5;
+}
+.cont-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.cont-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.288);
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont-overlay h1 {
+    font-size: 4rem;
+    color: white;
+}
+
+.gogl-map {
+    width: 100%;
+    height: 31rem;
+    margin-top: 5rem;
+}
+.map {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: 6;
+}
+.contact-page{
+    width:100%;
+    height: 33rem;
+    display: flex;
+    align-items: center;
+}
+.left-contact{
+    width:50%;
+    height: 25rem;
+    display: flex;
+    }
+.right-contact{
+    width:50%;
+    height: 30rem;
+    padding: 3rem 2rem 0 3rem;
+}
+.cont-icon{
+    width:35%;
+    height: 25rem;
+ padding-left: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.box{
+    width: 7rem;
+    height: 7rem;
+    border:2px dotted rgba(0, 0, 0, 0.685);
+    border-radius: 5rem;
+    margin: 1rem;
+    display: grid;
+    place-items: center;
+}
+.box i{
+    color:#6b76ff;
+    font-size: 2rem;
+}
+.cont-icon h3{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+.cont-icon h6{
+    font-size: .9rem;
+}
+@media(max-width:900px){
+    .cont-overlay h1 {
+        font-size: 3rem;
+}
+    .contact-page{
+        width:100%;
+        height: 75rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .left-contact{
+        width:100%;
+        height: 45rem;
+        display: flex;
+        flex-direction: column;
+        }
+    .right-contact{
+        width:100%;
+        height: 33rem;
+        padding: 3rem 2rem 0 1rem;
+    }
+    .cont-icon{
+        width:100%;
+        height: 25rem;
+     padding-left: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}

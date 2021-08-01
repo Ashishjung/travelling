@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+.whole-container{
+  width:100%;
+  height:auto;
+ overflow-x:hidden;
+ }
+.header{
+  width:100%;
+  height:15vh;
+  background-color:rgba(0, 0, 0, 0.007);
+  font-family: 'Nunito', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 8;
+  /* position: fixed; */
+  } 
+  .header h1{
+    margin-left: 2rem;
+    cursor: pointer;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  .header .hamburg{
+    margin-right: 4rem;
+    transform: rotate(90deg);
+    font-size: 2.2rem;
+    color:white;
+    cursor: pointer;
+  }
+ .nav-item{
+    height: 100vh;
+    width: 30%;
+   right:0;
+  position:fixed;
+  top:0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  flex-direction: column;
+  z-index: 10;
+transform: translateX(400px);
+}
+.component{
+  width: 100%;
+  position:absolute;
+  top:0;
+  overflow-x: hidden;
+  z-index: 7;
+}
+.nav-item li{
+  list-style-type: none;
+  margin-top: 1rem;
+  font-size: 1.6rem;
+  }
+.nav-item .circle-box{
+  width: 8rem;
+  height: 8rem;
+  border-radius: 5rem;
+ border:2px dotted black;
+  margin-top: 2rem;
+ display: grid;
+ place-items: center;
+
+}
+.nav-item i{
+  font-size: 2rem;
+  color: rgba(0, 0, 0, 0.61);
+}
+.nav-item h3{
+  font-size: .9rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: rgba(0, 0, 0, 0.61);
+}
+.nav-item .menu-item{
+  text-decoration: none;
+  color:black;
+  cursor: pointer;
+ }
+ @media(max-width:900px){
+  .nav-item{
+    height: 100vh;
+    width: 40%;
+   }
+ }
+ @media(max-width:500px){
+  .nav-item{
+    height: 100vh;
+    width: 70%;
+   }
+   .nav-item li{
+    font-size: 1.6rem;
+    color: rgba(0, 0, 0, 0.61);
+  }
+  .header .hamburg{
+    margin-right: .3rem;
+    transform: rotate(90deg);
+    font-size: 2.2rem;
+    color:white;
+    cursor: pointer;
+  }
+  .nav-item i{
+    font-size: 2.5rem;
+  }
+ }
+ @media(max-width:400px){
+  .nav-item{
+    height: 100vh;
+    width: 60%;
+   }
+   .header .hamburg{
+    margin-right: .3rem;
+    transform: rotate(90deg);
+    font-size: 2.2rem;
+    color:white;
+    cursor: pointer;
+  }
+ }
